@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Перегляд кошика</title>
+</head>
+<body>
+  <h1>Перегляд кошика інтернет-магазину</h1>
+
+  <label for="cartId">Ідентифікатор кошика:</label>
+  <input type="number" id="cartId" value="1" min="1">
+  <button id="loadBtn">Завантажити кошик</button>
+
+<select id="mode">
+  <option value="normal">Звичайний запит</option>
+  <option value="404">Тест: помилка 404</option>
+  <option value="503">Тест: помилка 503</option>
+  <option value="failFirst">Тест: перша спроба невдала</option>
+</select>
+
+  <p id="status">Введіть ідентифікатор і натисніть «Завантажити кошик».</p>
+
+  <div id="cartData"></div>
+
+  <p id="error" style="color: red;"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
